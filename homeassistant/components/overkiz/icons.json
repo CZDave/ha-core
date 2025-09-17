@@ -42,5 +42,22 @@
         "default": "mdi:shield-lock"
       }
     }
+  },
+  "services": {
+    "batch_set_cover_tilt_position": {
+      "service": "mdi:arrow-top-right"
+    },
+    "batch_set_cover_position": {
+      "service": "mdi:arrow-down-box"
+    },
+    "batch_open_cover": {
+      "service": "mdi:arrow-up-box"
+    },
+    "batch_close_cover": {
+      "service": "mdi:arrow-down-box"
+    },
+    "batch_stop_cover": {
+      "service": "mdi:stop"
+    }
   }
 }

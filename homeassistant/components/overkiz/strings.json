@@ -179,5 +179,65 @@
         }
       }
     }
+  },
+  "services": {
+    "batch_set_cover_tilt_position": {
+      "name": "Batch Set Covers Tilt Position",
+      "description": "Set tilt for multiple covers at once.",
+      "fields": {
+        "tilt": {
+          "name": "Tilt position",
+          "description": "Target tilt position."
+        },
+        "entities": {
+          "name": "Covers",
+          "description": "A list of cover entities. Cover groups are also supported."
+        }
+      }
+    },
+    "batch_set_cover_position": {
+      "name": "Batch Set Covers Position",
+      "description": "Set position for multiple covers at once.",
+      "fields": {
+        "position": {
+          "name": "Position",
+          "description": "Target position."
+        },
+        "entities": {
+          "name": "Covers",
+          "description": "A list of cover entities. Cover groups are also supported."
+        }
+      }
+    },
+    "batch_open_cover": {
+      "name": "Batch Open Covers",
+      "description": "Opens multiple covers at once.",
+      "fields": {
+        "entities": {
+          "name": "Covers",
+          "description": "A list of cover entities. Cover groups are also supported."
+        }
+      }
+    },
+    "batch_close_cover": {
+      "name": "Batch Close Covers",
+      "description": "Closes multiple covers at once.",
+      "fields": {
+        "entities": {
+          "name": "Covers",
+          "description": "A list of cover entities. Cover groups are also supported."
+        }
+      }
+    },
+    "batch_stop_cover": {
+      "name": "Batch Stop Covers",
+      "description": "Stops movement of multiple covers at once.",
+      "fields": {
+        "entities": {
+          "name": "Covers",
+          "description": "A list of cover entities. Cover groups are also supported."
+        }
+      }
+    }
   }
 }

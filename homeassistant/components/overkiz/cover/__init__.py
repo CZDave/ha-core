@@ -9,6 +9,7 @@ from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 from .. import OverkizDataConfigEntry
 from .awning import Awning
 from .generic_cover import OverkizGenericCover
+from .services import ServicesSetup
 from .vertical_cover import LowSpeedCover, VerticalCover
 
 
@@ -39,3 +40,5 @@ async def async_setup_entry(
     ]
 
     async_add_entities(entities)
+
+    ServicesSetup(hass, data.coordinator, entities)

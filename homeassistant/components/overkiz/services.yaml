@@ -1,0 +1,63 @@
+batch_set_cover_tilt_position:
+  fields:
+    tilt:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 100
+          unit_of_measurement: "%"
+    entities:
+      required: true
+      selector:
+        entity:
+          multiple: true
+          filter:
+            domain: cover
+
+batch_set_cover_position:
+  fields:
+    position:
+      required: true
+      selector:
+        number:
+          min: 0
+          max: 100
+          unit_of_measurement: "%"
+    entities:
+      required: true
+      selector:
+        entity:
+          multiple: true
+          filter:
+            domain: cover
+
+batch_open_cover:
+  fields:
+    entities:
+      required: true
+      selector:
+        entity:
+          multiple: true
+          filter:
+            domain: cover
+
+batch_close_cover:
+  fields:
+    entities:
+      required: true
+      selector:
+        entity:
+          multiple: true
+          filter:
+            domain: cover
+
+batch_stop_cover:
+  fields:
+    entities:
+      required: true
+      selector:
+        entity:
+          multiple: true
+          filter:
+            domain: cover
